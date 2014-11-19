@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Open mHealth on GitHub by openmhealth</title>
@@ -11,43 +11,76 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+</head>
+<body>
+<div class="wrapper">
+    <header>
         <h1>Open mHealth on GitHub</h1>
+
         <p>Bringing clinical meaning to digital health data</p>
 
+        <p class="view"><a href="www.openmhealth.org">Visit us on www.openmhealth.org</a><br>
+            <a href="https://github.com/openmhealth">View our GitHub profile</a></p>
 
-        <p class="view"><a href="https://github.com/openmhealth">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
+    </header>
+    <section>
         <h3>
-<a id="i-want-to-represent-clinical-data-in-a-structured-way" class="anchor" href="#i-want-to-represent-clinical-data-in-a-structured-way" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to represent clinical data in a structured way.</h3>
+            <a id="i-want-to-represent-clinical-data-in-a-structured-way" class="anchor"
+               href="#i-want-to-represent-clinical-data-in-a-structured-way" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>I want to represent health data in a structured way.</h3>
 
-<p>You need a schema for each type of clinical data you want to represent, like blood pressure or body weight. We brought together clinical experts, data scientists, software architects and developers to come up with simple, descriptive schemas for common types of clinical data. You can read up about the schemas on our <a href="http://www.openmhealth.org/developers/schemas/">website</a>, and use our <a href="https://github.com/openmhealth/schemas">schema repository</a> to look at lots of sample data, validate your own data, or create new schemas.</p>
+        <p>You need a schema for each type of data you want to represent, like blood pressure or body weight. We've
+            brought together top clinical experts, data scientists, developers and software architects to come up with
+            simple, extensible, descriptive schemas for common types of health data. You can
+            <a href="http://www.openmhealth.org/developers/schemas/">browse these schemas</a>,
+            <a href="http://www.openmhealth.org/our-approach/clinical-schemas/">learn more about our approach to
+                developing them</a>,
+            and use our <a href="https://github.com/openmhealth/schemas">schema repository</a> to find sample data,
+            validate your own data, or create new schemas.</p>
 
-<h3>
-<a id="i-want-to-let-my-users-share-their-clinical-data" class="anchor" href="#i-want-to-let-my-users-share-their-clinical-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to let my users share their clinical data.</h3>
+        <h3>
+            <a id="i-want-to-let-my-users-share-their-clinical-data" class="anchor"
+               href="#i-want-to-let-my-users-share-their-clinical-data" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>I want to let my users share their health data with other
+            applications.</h3>
 
-<p>You need to store their data, offer a simple API to let other systems access that data, and support OAuth to let your users authorize access to their data. We've built an <a href="https://github.com/openmhealth/omh-dsu-ri">API endpoint</a> that does all of that and is easy to deploy.</p>
+        <p>You need to offer a simple API that lets your users authorise access to their data and lets other
+            applications retrieve it.
+            Our <a href="https://github.com/openmhealth/omh-dsu-ri">DSU
+                repository</a> contains an API endpoint that stores health data, implements OAuth 2.0, and is easy to
+            deploy.</p>
 
-<h3>
-<a id="i-want-to-pull-in-structured-data-from-apps-and-devices-like-runkeeper-fitbit-and-jawbone" class="anchor" href="#i-want-to-pull-in-structured-data-from-apps-and-devices-like-runkeeper-fitbit-and-jawbone" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to pull in structured data from apps and devices like RunKeeper, Fitbit, and Jawbone.</h3>
+        <h3>
+            <a id="i-want-to-pull-in-structured-data-from-apps-and-devices-like-runkeeper-fitbit-and-jawbone"
+               class="anchor"
+               href="#i-want-to-pull-in-structured-data-from-apps-and-devices-like-runkeeper-fitbit-and-jawbone"
+               aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to pull in and process health
+            data from apps
+            and devices like RunKeeper, Fitbit, and Jawbone.</h3>
 
-<p>You need to fetch data from those toolmaker APIs and map it to your schemas. We've built <a href="https://github.com/openmhealth/omh-shims">API shims and a shim server</a> that do just that.</p>
+        <p>You need to fetch data from those toolmaker APIs and convert it into a common format. This lets your code
+             work on the data irrespective of where it came from. It also lets you use third-party code that understands
+            the data schemas your data now conforms to. Our <a
+                    href="https://github.com/openmhealth/omh-shims">shim repository</a> contains API shims that pull
+            data from the leading toolmaker APIs and converts it to match our schemas.</p>
 
-<h3>
-<a id="i-want-a-product-that-pulls-in-patient-data-from-consumer-apis-processes-it-and-puts-it-in-front-of-clinicians" class="anchor" href="#i-want-a-product-that-pulls-in-patient-data-from-consumer-apis-processes-it-and-puts-it-in-front-of-clinicians" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want a product that pulls in patient data from apps and devices, processes it, and puts it in front of clinicians.</h3>
+        <h3>
+            <a id="i-want-a-product-that-pulls-in-patient-data-from-consumer-apis-processes-it-and-puts-it-in-front-of-clinicians"
+               class="anchor"
+               href="#i-want-a-product-that-pulls-in-patient-data-from-consumer-apis-processes-it-and-puts-it-in-front-of-clinicians"
+               aria-hidden="true"><span class="octicon octicon-link"></span></a>I want a product that pulls in patient
+            data from apps and devices, processes it, and puts it in front of clinicians.</h3>
 
-<p>You need to talk to us about <a href="http://www.linqhealth.co/">Linq</a>.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+        <p>You need to talk to us about <a href="http://www.linqhealth.co/">Linq</a>.</p>
+    </section>
+    <footer>
+        <p>
+            <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+            </small>
+        </p>
+    </footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+</body>
 </html>
